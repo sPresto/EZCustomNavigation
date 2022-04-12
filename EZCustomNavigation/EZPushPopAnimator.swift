@@ -102,7 +102,7 @@ public final class EZPushPopAnimator: NSObject, UIViewControllerAnimatedTransiti
         if (transitionContext.isInteractive) {
             UIView.animate(withDuration: duration,
                            delay: 0,
-                           options: .curveLinear,
+                           options: .curveEaseInOut,
                            animations: animationBlock,
                            completion: completionBlock)
         } else {
